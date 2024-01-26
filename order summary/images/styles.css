@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    /* Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+svg, img {
+    width: 100%;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    /* vhange font family later */
+    font-family: sans-serif;
+    background-image: url(pattern-background-desktop.svg);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--Very-pale-blue);
+}
+
+.img-container {
+    width: 100%;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+p {
+    padding: 0 1rem;
+    margin: 0 2rem; 
+}
+
+.about-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    padding: 20px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px var(--Pale-blue);
+
+}
+
+.left  {
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    margin-left: -10px;
+}
+
+.plan-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.price {
+    align-self: flex-start;
+    position: relative;
+    left: -45px;
+    color: var(--Desaturated-blue);
+}
+
+.about-plan a {
+    color: var(--Dark-blue);
+}
+
+.payment {
+    width: 75%;
+    padding: 15px 0;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 10px 30px var(--Desaturated-blue);
+}
+
+.cancel {
+    margin: 10px 10px 30px 10px;
+    text-decoration: none;
+    color: var(--Dark-blue);
+}
+
+@media (max-width: 375px) {
+   
+
+    .container {
+        width: 90%;
+    }
+}

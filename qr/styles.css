@@ -32,8 +32,7 @@ main {
 }
 
 .container {
-    width: 22%;
-    /* border: 1px solid black; */
+    width: 30rem;
     background-color: var(--White);
     border-radius: 15px;
     padding: 10px;
@@ -67,11 +66,3 @@ p{
 
 }
 
-
-@media (max-width: 375px) {
-
-    .container {
-        width: 80%;
-    }
-
-}
